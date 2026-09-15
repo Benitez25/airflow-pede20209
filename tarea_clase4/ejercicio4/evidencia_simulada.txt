@@ -1,0 +1,17 @@
+Salida simulada de ejecución
+
+=== CHAIN ===
+Resultado chain: 2500
+
+=== GROUP ===
+Resultado group: [4, 9, 8, 15]
+
+=== CHORD ===
+Resultado chord: {'resultados': [4, 9, 8, 15], 'suma_total': 36}
+
+Worker Celery:
+[2026-09-14 20:46:02,318: INFO/MainProcess] celery@DESKTOP ready.
+[2026-09-14 20:46:08,104: INFO/MainProcess] Task canvas_demo.sumar received
+[2026-09-14 20:46:08,121: INFO/MainProcess] Task canvas_demo.sumar succeeded
+[2026-09-14 20:46:08,135: INFO/MainProcess] Task canvas_demo.multiplicar succeeded
+[2026-09-14 20:46:08,148: INFO/MainProcess] Task canvas_demo.cuadrado succeeded

@@ -1,0 +1,12 @@
+Prueba de referencia - mismo DAG, 6 tareas de 10 segundos
+
+A) 1 worker / worker_concurrency=1
+Tiempo total: 64.21 segundos
+
+B) 1 worker / worker_concurrency=6
+Tiempo total: 14.18 segundos
+
+C) 2 workers / worker_concurrency=3 cada uno
+Tiempo total: 14.72 segundos
+
+Estos valores representan una simulación controlada con overhead de scheduler/Celery y espera de polling.

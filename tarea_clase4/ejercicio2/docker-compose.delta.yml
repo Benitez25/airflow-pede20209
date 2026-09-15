@@ -1,0 +1,16 @@
+
+airflow-worker-prioridad-sap:
+  <<: *airflow-common
+  command: celery worker --queues prioridad_sap
+  environment:
+    <<: *airflow-common-env
+    AIRFLOW__CELERY__WORKER_CONCURRENCY: 2
+  healthcheck:
+    test:
+      - "CMD-SHELL"
+      - 'celery --app airflow.providers.celery.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}" || exit 1'
+    interval: 30s
+    timeout: 10s
+    retries: 5
+    start_period: 30s
+  restart: always

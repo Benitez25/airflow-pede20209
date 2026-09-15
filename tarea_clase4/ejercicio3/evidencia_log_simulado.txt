@@ -1,0 +1,19 @@
+Evidencia simulada de una corrida con backoff exponencial
+
+2026-09-14 20:22:10 INFO - Intento de llamada a API. random=0.4172
+2026-09-14 20:22:10 ERROR - La API no estuvo disponible temporalmente
+2026-09-14 20:22:10 INFO - Marking task as UP_FOR_RETRY
+
+2026-09-14 20:22:17 INFO - Intento de llamada a API. random=0.2284
+2026-09-14 20:22:17 ERROR - La API no estuvo disponible temporalmente
+2026-09-14 20:22:17 INFO - Marking task as UP_FOR_RETRY
+
+2026-09-14 20:22:31 INFO - Intento de llamada a API. random=0.5938
+2026-09-14 20:22:31 ERROR - La API no estuvo disponible temporalmente
+2026-09-14 20:22:31 INFO - Marking task as UP_FOR_RETRY
+
+2026-09-14 20:22:59 INFO - Intento de llamada a API. random=0.7426
+2026-09-14 20:22:59 INFO - Llamada a API completada correctamente
+2026-09-14 20:22:59 INFO - Marking task as SUCCESS
+
+Separación observada entre intentos: 7 s, 14 s y 28 s.
